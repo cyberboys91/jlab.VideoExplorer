@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/navVideos"
+        android:icon="@drawable/img_menu_video"
+        android:title="@string/all_video"
+        android:checkable="true"
+        app:actionLayout="@layout/menu_counter" />
+    <item android:id="@+id/navAlbumsVideos"
+        android:icon="@drawable/img_menu_album"
+        android:title="@string/albums_folder"
+        android:checkable="true"
+        app:actionLayout="@layout/menu_counter" />
+    <item android:id="@+id/navFavoriteVideos"
+        android:icon="@drawable/img_menu_favorite"
+        android:title="@string/favorite_folder"
+        android:checkable="true"
+        app:actionLayout="@layout/menu_counter" />
+    <item android:id="@+id/navCameraVideos"
+        android:icon="@drawable/img_menu_camera"
+        android:title="@string/camera_folder"
+        android:checkable="true"
+        app:actionLayout="@layout/menu_counter" />
+    <item android:id="@+id/navDownloadVideos"
+        android:icon="@drawable/img_menu_download"
+        android:title="@string/downloads_folder"
+        android:checkable="true"
+        app:actionLayout="@layout/menu_counter" />
+</menu>

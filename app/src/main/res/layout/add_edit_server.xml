@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_big"
+            android:textColor="@color/black"
+            android:text="@string/config"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="@string/comment_setting"
+            android:id="@+id/tvDownloadDir"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:padding="@dimen/short_margin"
+            android:id="@+id/etHostServer"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_host"
+            android:textSize="@dimen/text_size"
+            android:inputType="textUri"
+            android:background="@drawable/edit_text_outline"/>
+
+        <!--<EditText-->
+            <!--android:padding="@dimen/short_margin"-->
+            <!--android:layout_marginLeft="@dimen/short_margin"-->
+            <!--android:id="@+id/etPortServer"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:hint="@string/hint_port"-->
+            <!--android:textSize="@dimen/textSize"-->
+            <!--android:inputType="number"-->
+            <!--android:background="@drawable/edit_text_outline"/>-->
+
+    </LinearLayout>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/short_margin"
+            android:id="@+id/etComment"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:singleLine="false"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_comment"
+            android:textSize="@dimen/text_size"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text_outline"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/text_size"
+            android:text="@string/hint_download_folder"
+            android:layout_marginTop="@dimen/short_margin"/>
+
+        <Spinner
+            android:padding="@dimen/short_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ibDownloadPath"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@android:style/Widget.Holo.Light.Spinner"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

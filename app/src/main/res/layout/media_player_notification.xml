@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/llnotificationArea"
+    android:background="@color/media_notification"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_height="65dp"
+        android:layout_width="65dp">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/ivResourceIcon"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/ivResourceIconType"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvResourceName"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/short_margin"
+                android:layout_marginStart="@dimen/short_margin"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:ellipsize="middle"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ivMediaCloseNotify"
+                android:src="@drawable/img_close"
+                android:scaleType="centerCrop"
+                android:background="@drawable/media_player_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ivMediaPrevNotify"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@drawable/media_player_button"/>
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ivMediaSeekRewNotify"
+                android:src="@android:drawable/ic_media_rew"
+                android:background="@drawable/media_player_button"/>
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ivMediaPlayPauseNotify"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@drawable/media_player_button"/>
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ivMediaSeekFFNotify"
+                android:src="@android:drawable/ic_media_ff"
+                android:background="@drawable/media_player_button"/>
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ivMediaNextNotify"
+                android:src="@android:drawable/ic_media_next"
+                android:background="@drawable/media_player_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

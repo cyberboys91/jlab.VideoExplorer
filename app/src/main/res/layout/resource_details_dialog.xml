@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/rlResourceDetails"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:padding="@dimen/margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_big"
+            android:padding="@dimen/short_margin"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResourceTypeDetails"
+            android:textSize="@dimen/text_size"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_marginLeft="@dimen/short_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_big"
+            android:padding="@dimen/short_margin"
+            android:layout_marginTop="@dimen/short_margin"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_marginLeft="@dimen/short_margin"
+            android:id="@+id/tvResourceNameDetails"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Path"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_big"
+            android:padding="@dimen/short_margin"
+            android:layout_marginTop="@dimen/short_margin"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_marginLeft="@dimen/short_margin"
+            android:id="@+id/tvResourcePathDetails"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResourceSizeDetailsTitle"
+            android:text="@string/size"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_big"
+            android:padding="@dimen/short_margin"
+            android:layout_marginTop="@dimen/short_margin"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_marginLeft="@dimen/short_margin"
+            android:id="@+id/tvResourceSizeDetails"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modification"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_big"
+            android:padding="@dimen/short_margin"
+            android:layout_marginTop="@dimen/short_margin"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_marginLeft="@dimen/short_margin"
+            android:id="@+id/tvResourceModificationDetails"
+            android:textSize="@dimen/text_size"/>
+
+    </LinearLayout>
+
+</ScrollView>

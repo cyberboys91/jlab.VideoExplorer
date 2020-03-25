@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:paddingRight="7dp"
+    android:layout_marginBottom="7dp">
+
+    <ImageView
+        android:layout_height="@dimen/icon_res"
+        android:layout_width="@dimen/icon_res"
+        android:id="@+id/ivResourceIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivResourceIcon"
+        android:layout_toEndOf="@+id/ivResourceIcon"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResourceName"
+            android:textSize="@dimen/text_size"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textColor="@android:color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="17dp">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/progress_bar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/pbOcuppedSpace"
+                style="@style/ProgressBarSpecialDir"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="start"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/short_text_size_v1"
+                    android:id="@+id/tvOcupedSpace"
+                    android:paddingLeft="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="start"
+                    android:textSize="@dimen/short_text_size_v1"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvAllSpace"
+                    android:paddingRight="3dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

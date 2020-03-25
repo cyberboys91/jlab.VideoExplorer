@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jlab.VideoExplorer.View.VideoSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srlRefresh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flMediaSpace"
+        android:background="@android:color/black">
+
+        <SurfaceView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/svSpaceShow"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/Properties"
+            android:visibility="invisible">
+
+            <jlab.VideoExplorer.View.LocalPropertiesLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:id="@+id/ivRotateScreen"
+                android:src="@drawable/img_rotate_screen"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMediaSeek"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="120dp"
+            android:textSize="@dimen/media_textview_size"
+            android:visibility="invisible"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:orientation="vertical"
+            android:id="@+id/llBrightness"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_brightness"
+                android:layout_marginBottom="5dp"/>
+
+            <ProgressBar
+                android:layout_width="7dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pbBrightness"
+                style="@style/ProgressBarVertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:orientation="vertical"
+            android:id="@+id/llVolume"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_audio_not"
+                android:layout_marginBottom="5dp"/>
+
+            <ProgressBar
+                android:layout_width="7dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pbVolume"
+                style="@style/ProgressBarVertical"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</jlab.VideoExplorer.View.VideoSwipeRefreshLayout>

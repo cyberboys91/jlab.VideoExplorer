@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dp"
+    android:paddingStart="7dp"
+    android:paddingEnd="7dp"
+    android:paddingRight="5dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:id="@+id/rlResourceDetails">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResourceName"
+            android:textSize="@dimen/text_size"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:ellipsize="middle"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvResourceName"
+            android:orientation="horizontal"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvResourceComment"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/short_text_size_v1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContentComment"
+                android:textSize="@dimen/short_text_size_v1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

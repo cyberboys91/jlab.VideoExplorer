@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_bar_audio_height"
+    android:background="@color/white"
+    android:id="@+id/blMediaPlayerFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            style="@style/ProgressBarSpecialDir"
+            android:progressDrawable="@drawable/progressbar_primary"
+            android:id="@+id/pbSeekMedia" />
+
+        <include layout="@layout/remote_resource_details_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fbPlayOrPauseMedia"
+            app:fabSize="mini"
+            app:backgroundTint="@color/primary_bright"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin" />
+
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>

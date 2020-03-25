@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jlab.VideoExplorer"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_video"
+        android:largeHeap="true"
+        android:label="@string/app_name">
+
+        <receiver android:name="jlab.VideoExplorer.Service.BackMediaPlayerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="jlab.VIDEOEXPLORER.MEDIA_NEXT" />
+                <action android:name="jlab.VIDEOEXPLORER.MEDIA_PREV" />
+                <action android:name="jlab.VIDEOEXPLORER.MEDIA_REW" />
+                <action android:name="jlab.VIDEOEXPLORER.MEDIA_FF" />
+                <action android:name="jlab.VIDEOEXPLORER.MEDIA_PLAY_OR_PAUSE" />
+                <action android:name="jlab.VIDEOEXPLORER.MEDIA_CLOSE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="jlab.VideoExplorer.Activity.DirectoryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppVideoTheme"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="jlab.VideoExplorer.Activity.VideoPlayerActivity"
+            android:icon="@drawable/icon_video"
+            android:label="@string/app_name"
+            android:theme="@style/VideoExplorerTheme"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="jlab.VIDEOEXPLORER.action.VIDEO"/>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="file" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="jlab.VideoExplorer.Service.MediaPlayerService" />
+        <service android:name="jlab.VideoExplorer.Service.DeleteResourceService" />
+        <service android:name="jlab.VideoExplorer.Service.ResourceDownloaderService"/>
+    </application>
+</manifest>
