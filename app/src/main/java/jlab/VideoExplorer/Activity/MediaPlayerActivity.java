@@ -17,12 +17,12 @@ import jlab.VideoExplorer.Utils;
 import android.app.DownloadManager;
 import android.app.NotificationManager;
 import jlab.VideoExplorer.Interfaces;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import jlab.VideoExplorer.DownloadImageTask;
 import jlab.VideoExplorer.View.ImageDownload;
 import jlab.VideoExplorer.Resource.FileResource;
 
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import jlab.VideoExplorer.View.MediaControllerView;
 import jlab.VideoExplorer.Service.MediaPlayerService;
 import jlab.VideoExplorer.Service.BackMediaPlayerReceiver;

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/llListContent">
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srlRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -14,6 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@android:id/list"/>
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

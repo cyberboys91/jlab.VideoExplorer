@@ -9,7 +9,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import jlab.VideoExplorer.Utils;
 import android.widget.MediaController;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import jlab.VideoExplorer.Interfaces;
 import jlab.VideoExplorer.Resource.Resource;
 import jlab.VideoExplorer.Resource.Directory;

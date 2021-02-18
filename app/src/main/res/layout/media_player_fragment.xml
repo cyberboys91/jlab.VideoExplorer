@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.AppBarLayout
+<com.google.android.material.appbar.AppBarLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"/>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/fbPlayOrPauseMedia"
@@ -38,4 +38,4 @@
             android:layout_marginEnd="@dimen/margin" />
 
     </RelativeLayout>
-</android.support.design.widget.AppBarLayout>
+</com.google.android.material.appbar.AppBarLayout>

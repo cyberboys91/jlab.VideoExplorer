@@ -15,9 +15,9 @@ import jlab.VideoExplorer.Interfaces;
 import android.graphics.BitmapFactory;
 import android.app.NotificationManager;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.Nullable;
+import com.google.android.material.snackbar.Snackbar;
 import jlab.VideoExplorer.Resource.RemoteFile;
 
 /*

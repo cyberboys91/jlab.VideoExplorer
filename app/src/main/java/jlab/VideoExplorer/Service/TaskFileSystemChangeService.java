@@ -7,7 +7,7 @@ import android.content.Context;
 import android.app.Notification;
 import java.util.concurrent.Semaphore;
 import jlab.VideoExplorer.Interfaces;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import jlab.VideoExplorer.Resource.Resource;
 import jlab.VideoExplorer.Resource.Directory;
 import jlab.VideoExplorer.Resource.FileResource;

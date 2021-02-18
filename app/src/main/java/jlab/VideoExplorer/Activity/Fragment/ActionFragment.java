@@ -14,7 +14,7 @@ import android.view.LayoutInflater;
 import jlab.VideoExplorer.Utils;
 import android.content.DialogInterface;
 import jlab.VideoExplorer.Interfaces;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import jlab.VideoExplorer.Resource.Resource;
 
 

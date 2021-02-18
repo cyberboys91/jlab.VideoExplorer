@@ -5,7 +5,7 @@ import android.view.MotionEvent;
 import android.util.AttributeSet;
 import android.view.ViewConfiguration;
 import jlab.VideoExplorer.Interfaces;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import jlab.VideoExplorer.Service.MediaPlayerService;
 import jlab.VideoExplorer.Activity.VideoPlayerActivity;
 import jlab.VideoExplorer.Service.BackMediaPlayerReceiver;
